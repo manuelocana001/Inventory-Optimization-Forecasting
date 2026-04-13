@@ -59,15 +59,19 @@ Calculated optimal reorder points using statistical formulas:
 - Safety stock (95% service level)
 - Reorder points by SKU
 
-## 📈 Deliverables
+## 📊 Deliverables
 
-### [View Live Tableau Dashboard](https://public.tableau.com/app/profile/manuel.ramirez3002/viz/InventoryOptimizationDashboard_17754907143180/Dashboard1)
+### [View Live Tableau Dashboard](https://public.tableau.com/app/profile/manuel.ramirez3002/viz/InventoryOptimizationDashboard_17759662791210/Dashboard1)
 
 **Dashboard Features:**
-- ABC-XYZ classification heatmap showing SKU distribution
-- Top 10 SKUs by revenue
-- Demand trend analysis over 24 months
-
+- **KPI Summary Cards:** 200 SKUs analyzed, $273.3M total revenue, 53 high-value A-category SKUs
+- **ABC-XYZ Classification Matrix:** Heatmap showing SKU distribution across 6 segments (AX, AY, BX, BY, CX, CY)
+  - 38 AX items (high-value, stable) - top priority for forecasting
+  - 60 CX items (low-value, stable) - candidates for SKU rationalization
+- **Top 10 SKUs by Revenue:** Identifies SKU-0085, SKU-0039, and SKU-0182 as highest revenue generators
+- **Demand Trend Analysis:** 24-month time series showing stable demand patterns for top-selling SKUs
+- **Key Insight:** 53 SKUs (26.5%) generate 69.5% of revenue - validates Pareto principle
+  
 ### Project Files
 - `generate_inventory_data.py` — Synthetic dataset generator
 - `inventory_analysis.py` — ABC-XYZ classification logic
